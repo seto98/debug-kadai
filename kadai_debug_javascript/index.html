@@ -32,7 +32,7 @@
                 </div>
             </div>
             <!-- エラーメッセージ -->
-            <span id="error" class="hidden text-danger"></span>
+            <span id="errors" class="hidden text-danger"></span>
         </div>
 
         <!-- ボタン -->
@@ -69,7 +69,7 @@
                 return;
             }
 
-            document.getElementById('error').classList.add('hidden');
+            document.getElementById('errors').classList.add('hidden');
             document.getElementById('timer').innerText = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
         }
 
